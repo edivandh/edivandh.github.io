@@ -126,7 +126,7 @@ footer:
     - label: "Linkedin"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/s4dbrd/"
-      - label: "Linkedin"
+    - label: "Linkedin"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/ivancabrerafresno/"
     - label: "Twitter"
