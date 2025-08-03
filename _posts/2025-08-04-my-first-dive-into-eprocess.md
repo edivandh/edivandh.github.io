@@ -1,16 +1,11 @@
 ---
 layout: single
-title:  "My First Dive into EPROCESS"
+title:  "My First Dive into EPROCESS: ProcessSelfDelete research"
 date:   2025-08-03 06:48:14 +0100
 tags: [posts]
 excerpt: "Exploring the EPROCESS structure on Windows 11 24H2, with a focus on the mysterious ProcessSelfDelete flag, how it's activated, its effects on process termination, and its implications for offensive security."
 published: true
 ---
-Introduction
----
-
-# My First Dive into EPROCESS: ProcessSelfDelete research
-
 ## **What is the EPROCESS Structure?**
 
 The `EPROCESS` structure is a data structure within the Windows kernel that holds essential information about a process. This includes details such as the process's current state, its address space, security context, and the resources it utilizes.
